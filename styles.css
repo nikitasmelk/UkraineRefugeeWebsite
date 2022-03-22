@@ -179,6 +179,8 @@ html {
 @media (max-width: 1200px) {
   .arrow{
     width: 5rem;
+    -webkit-filter: drop-shadow(2px 0px 0px rgb(255, 196, 0));
+    filter: drop-shadow(2px 0px 0px rgb(255, 208, 0));
   } /* optimize for mobile */
 
   .description{
