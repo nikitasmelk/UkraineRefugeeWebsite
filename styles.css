@@ -176,7 +176,10 @@ html {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px) { /* optimize for mobile */
+@media (max-width: 1200px) {
+  .arrow{
+    width: 5rem;
+  } /* optimize for mobile */
 
   .description{
     width: 80vw;
