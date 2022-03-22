@@ -80,11 +80,11 @@ html {
 }
 
 .container_1{
-  /* background-image: url("main_img.jpg"); */
+  background-image: url("main_img.jpg");
   background-position-x: center;
   height: 100vh;
   width: 100vw;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .title{
@@ -98,6 +98,8 @@ html {
   color: rgb(230, 155, 17);
   text-shadow: 0.2rem 0.2rem black;
   text-align: center;
+  /* border: 1px solid red; */
+  width: 50vw;
 
   animation: fadeIn 2.5s ease-in;
 }
@@ -140,18 +142,34 @@ html {
 
 .container_2{
   height: 100vh;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 .description{
-  margin: auto;
-  width: 80vw;
-  margin-top: 20px;
-  font-size: 20px;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: min-content;
+  /* border: 1px solid blue; */
+  /* margin-top: 20px; */
+  font-size: 1.5rem;
+  color: whitesmoke;
 }
 
-@media (max-width: 600px) { /* optimize for mobile */
+.subtitle{
+  color: orange;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) { /* optimize for mobile */
   .title{
-    font-size: 4rem;
+    width: 100vw;
+    font-size: 3rem;
   }
 }
