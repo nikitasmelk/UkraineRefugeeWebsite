@@ -98,6 +98,8 @@ html {
   color: rgb(230, 155, 17);
   text-shadow: 0.2rem 0.2rem black;
   text-align: center;
+
+  animation: fadeIn 2.5s ease-in;
 }
 
 .arrow_container{
@@ -117,6 +119,10 @@ html {
   transform: translate(0, -50%); */
 
   animation: arrowDown 1.7s infinite ease;
+}
+
+.arrow:hover{
+  filter: invert(100%);
 }
 /* 
 .main_img{
@@ -144,7 +150,7 @@ html {
   font-size: 20px;
 }
 
-@media (max-width: 500px) { /* optimize for mobile */
+@media (max-width: 600px) { /* optimize for mobile */
   .title{
     font-size: 4rem;
   }
