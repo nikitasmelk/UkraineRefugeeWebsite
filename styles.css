@@ -62,8 +62,8 @@ html {
   right: 20px;
   position: absolute;
   font-size: 20px;
-  width: 100px;
-  height: 40px;
+  width: fit-content;
+  /* height: 40px; */
 }
 
 .langSelector option{
@@ -146,22 +146,30 @@ html {
 }
 
 .description{
-  position: absolute;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  /* line-height: 90px;  */
+  /* position: absolute;
   top: 150%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 70vw;
-  height: min-content;
+  height: min-content; */
   /* border: 1px solid blue; */
   /* margin-top: 20px; */
-  font-size: 1.5rem;
+  
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+  width: 60vw;
+  font-size: 2.7rem;
   color: whitesmoke;
 }
 
 .subtitle{
   color: orange;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   font-size: 4rem;
   text-decoration: underline;
@@ -171,5 +179,11 @@ html {
   .title{
     width: 100vw;
     font-size: 3rem;
+  }
+
+  .description{
+    width: 80vw;
+    margin-top: 30px;
+    font-size: 2rem;
   }
 }
