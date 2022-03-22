@@ -55,9 +55,10 @@ html {
 } */
 
 .langSelector{
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: orange;
+  color: black;
   border-radius: 5%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   top: 20px;
   right: 20px;
   position: absolute;
@@ -67,7 +68,8 @@ html {
 }
 
 .langSelector option{
-  background-color: white;
+  background-color: black;
+  color: orange;
 }
 
 .langSelector:hover{
@@ -81,7 +83,8 @@ html {
 
 .container_1{
   background-image: url("main_img.jpg");
-  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   /* border: 1px solid red; */
@@ -95,13 +98,21 @@ html {
   transform: translate(-50%, -50%);
   font-size: 7rem;
   font-family:'ArialBlack-', sans-serif;
-  color: rgb(230, 155, 17);
+  color: #ffd700;
   text-shadow: 0.2rem 0.2rem black;
   text-align: center;
   /* border: 1px solid red; */
   width: 50vw;
 
   animation: fadeIn 2.5s ease-in;
+}
+
+.title .blue{
+  color: #0057b7;
+}
+
+.title .yellow{
+  color: #ffd700;
 }
 
 .arrow_container{
@@ -142,6 +153,7 @@ html {
 
 .container_2{
   height: 100vh;
+  background-color: #0057b7;
   /* border: 1px solid orange; */
 }
 
@@ -169,7 +181,8 @@ html {
 }
 
 .subtitle{
-  color: orange;
+  font-family:'ArialBlack-', sans-serif;
+  color: #ffd700;
   margin-top: 30px;
   text-align: center;
   font-size: 4rem;
