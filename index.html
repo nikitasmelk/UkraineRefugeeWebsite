@@ -6,20 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="languagePicker.css"> -->
   <link rel="icon" href="/peace_pigeon_img.jpg" type="image/icon type">
   <title>інформація</title>
 </head>
 
 <body>
 
-  <!-- LANGUAGE DROP DOWN -->
-  <!-- <div class="container"> -->
-		<div class="langWrap">
+  <!-- LANGUAGE SELECTOR -->
+  <select class="langWrap" name="languages" id="langSelector" onchange="langChange()">
+    <option language='english' value="english">🇬🇧 ENG</option>
+    <option language='ukranian' value="ukranian">УКР</option>
+    <option language='russian' value="russian">РУС</option>
+    <option language='polish' value="polish">POL</option>
+  </select>
+
+		<!-- <div class="langWrap">
 			<a href="#" language='english' class="active">ENG</a>
 			<a href="#" language='ukranian'>УКР</a>
       <a href="#" language='russian'>РУС</a>
       <a href="#" language='polish'>POL</a>
-		</div>
+		</div> -->
 
 		<div class="content">
 			<h1 class="title">Ukraine Refugee Help</h2>
@@ -30,6 +37,7 @@
 
   <!-- language change -->
   <script src="script.js"></script>
+  
 
   <!-- <div class="navigation">
     <div class="nav_link">About Us</div>

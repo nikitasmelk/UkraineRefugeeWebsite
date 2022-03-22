@@ -3,11 +3,13 @@ body{
 }
 
 /* LANGUAGE CHANGE */
-.langWrap{
-  background: #333;
+/* .langWrap{
+  background: whitesmoke;
+  width: 100px;
+  height: 30px;
 }
 
-.langWrap a{
+.langWrap option{
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
@@ -15,11 +17,7 @@ body{
   font-weight: bold;
   background: #555656;
   font-size: 18px;
-}
-
-.langWrap a.active{
-  background: #f21313;
-}
+} */
 
 .content{
   margin-top: 40px;
