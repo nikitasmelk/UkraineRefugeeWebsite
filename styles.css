@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* font-family: 'Source Sans Pro', sans-serif; */
+
 @font-face { /*  Adding Arial font for mobile devices */
   font-family: 'ArialBlack-';
   src: url('arial-black.woff') format('woff'), /* Modern Browsers */
@@ -55,25 +58,34 @@ html {
 } */
 
 .langSelector{
-  background-color: orange;
-  color: black;
-  border-radius: 5%;
+  /* background-color: rgb(245, 197, 108); */
+  background: linear-gradient(90deg,#0ba5ff,#6ebae6);
+  /* background-image: linear-gradient(#0057b7, #ffd700); */
+  color: #ffd700;
+  border-radius: 25% 10%;
   /* border: 1px solid blue; */
   top: 20px;
   right: 20px;
   position: absolute;
-  font-size: 20px;
+  font-size: 25px;
   width: fit-content;
+  /* opacity: 70%; */
+  /* text-decoration: underline; */
   /* height: 40px; */
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
+
 .langSelector option{
-  background-color: black;
-  color: orange;
+  border-radius: 25% 10%;
+  background-color: #96cef3;
+  /* background: linear-gradient(90deg,#0ba5ff,#6ebae6); */
+  color: rgb(0, 0, 0);
 }
 
 .langSelector:hover{
-  border: 1px solid lime;
+  border: 1px solid rgb(0, 247, 255);
+  box-shadow: 0 6px 11px 0 rgb(11 165 255 / 20%);
 }
 
 .content{
