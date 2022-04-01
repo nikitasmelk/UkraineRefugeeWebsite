@@ -174,9 +174,9 @@ html {
 
 .org_box{
   margin: auto;
-  margin-top: 30px;
-  height: 250px;
-  width: 45vw;
+  margin-top: 200px;
+  height: 60vh;
+  width: 80vw;
   border-radius: 25px;
   background-color: white;
   /* background: linear-gradient(90deg, #0ba5ff,#6ebae6);
@@ -184,42 +184,86 @@ html {
   /* margin-top: 40px; */
 }
 
-.org_box .wrap{
+/* .org_box .wrap{
   position: relative;
   top: 12.5%;
   width: 100%;
   height: 75%;
   border: 1px solid salmon;
-}
+} */
 
 .org_img{
   position: relative;
-  /* top: 35px; */
-  /* left: -25px; */
-  height: 100%;
-  width: 18vw;
-  /* width: 180px; */
-  /* padding-top: 100%; 1:1 Aspect Ratio */
+  top: -30vw;
+  left: 10vw;
+  width: 60vw;
+  height: 80vw;
   background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
   border-radius: 20px;
   opacity: 0.8;
 }
 
+/* .org_img{
+  position: relative;
+
+  height: 100%;
+  width: 18vw;
+  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  border-radius: 20px;
+  opacity: 0.8;
+} */
+
+/* .org_img_container{
+	position: relative;
+  left: -25%;
+	width: 17vw;		
+}
+.org_img_container:before{
+	content: "";
+	display: inline-block;
+	padding-top: 100%; 	
+}
+
+.org_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: red;
+} */
+
 .org_info{
+  text-align: center;
+  position: relative;
+  top: -30vw;
   border-radius:1px solid lime;
+  height: 1px;
+  width: 80%;
+  margin: auto;
 }
 
 .org_title{
+  font-size: 30px;
+  margin-top: 20px;
   border-radius:1px solid yellow;
 }
 
 .org_description{
+  margin-top: 20px;
   border-radius:1px solid orange;
 }
 
 .footer{
   background-color: black;
   height: 20vh;
+}
+
+.org_donate{
+  margin-top: 20px;
+  padding: 10px;
+  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  border-radius: 20px;
 }
 
 
