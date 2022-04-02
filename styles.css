@@ -123,7 +123,7 @@ html {
 .arrow_container{
   /* position:absolute; */
   /* border: 1px solid red; */
-  animation: fadeIn 7s ease-in;
+  animation: fadeIn 4s ease-in;
 }
 
 .arrow{
@@ -132,9 +132,9 @@ html {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  width: 7rem;
-  -webkit-filter: drop-shadow(4px 0px 0px rgb(255, 196, 0));
-    filter: drop-shadow(4px 0px 0px rgb(255, 208, 0));
+  width: 13rem;
+  -webkit-filter: drop-shadow(1px 5px 5px #DAA520);
+    filter: drop-shadow(1px 5px 5px #b68816);
   /* -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%); */
 
@@ -142,7 +142,7 @@ html {
 }
 
 .arrow:hover{
-  filter: invert(100%);
+  filter: invert(70%);
 }
 
 .container_2{
@@ -259,7 +259,7 @@ html {
 }
 
 .org_title{
-  font-size: 40px;
+  font-size: 70px;
   /* margin-top: 20px; */
   font-weight: 700;
   /* border: 1px solid orange; */
@@ -270,7 +270,7 @@ html {
   /* margin-top: 40px; */
   line-height: 1.5em;
   max-height: 50%;
-  font-size: 20px;
+  font-size: 30px;
   color: #4e4a67;
   /* border: 1px solid salmon; */
   /* width: 80%; */
@@ -282,12 +282,16 @@ html {
   /* margin: auto; */
   /* margin-top: 40px; */
   padding: 15px 35px;
-  background-image: linear-gradient(147deg, #1E90FF 0%, #1E90FF 74%);
+  background-image: linear-gradient(147deg, #77bbff 0%, #0079f1 74%);
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 50px;
   letter-spacing: 1px;
   color: #fff;
   font-weight: 500;
+}
+
+.org_donate:hover{
+  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)
 }
 
 .footer{
@@ -303,6 +307,10 @@ html {
 }
 
 @media (max-width: 550px){
+  .arrow{
+    width: 7rem;
+  }
+
   .container_3{
     padding: 50px 0px;
     /* padding-top: 50px; */

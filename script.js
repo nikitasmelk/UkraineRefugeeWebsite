@@ -78,35 +78,36 @@ const changeImage = (image, array) => {
 
 // }
 
-function fadeIn(el) {
- // console.log('fadeIn')
- // console.log(window.getComputedStyle(el).getPropertyValue("opacity"))
- console.log('--fadeIn--')
- console.log(window.getComputedStyle(el).getPropertyValue("opacity"))
+// function fadeIn(el) {
+//  // console.log('fadeIn')
+//  // console.log(window.getComputedStyle(el).getPropertyValue("opacity"))
+//  console.log('--fadeIn--')
+//  console.log(window.getComputedStyle(el).getPropertyValue("opacity"))
 
- if(parseFloat(window.getComputedStyle(el).getPropertyValue("opacity")) < 1){
-  el.style.opacity = parseFloat(window.getComputedStyle(el).getPropertyValue("opacity")) + 0.01;
+//  if(parseFloat(window.getComputedStyle(el).getPropertyValue("opacity")) < 1){
+//   el.style.opacity = parseFloat(window.getComputedStyle(el).getPropertyValue("opacity")) + 0.01;
 
-  // console.log(window.getComputedStyle(el).getPropertyValue("opacity"))
-  setTimeout(function() {fadeIn(el)}, 1);
- } else {
-  changeImage(hope_img, hope_array);
-  fadeOut(el);
- }
-}
+//   // console.log(window.getComputedStyle(el).getPropertyValue("opacity"))
+//   setTimeout(function() {fadeIn(el)}, 1);
+//  } else {
+//   changeImage(hope_img, hope_array);
+//   fadeOut(el);
+//  }
+// }
 
-function fadeOut(el){
- // console.log('fadeOut')
- if(parseFloat(window.getComputedStyle(el).getPropertyValue("opacity")) > 0.5){
-  el.style.opacity = parseFloat(window.getComputedStyle(el).getPropertyValue("opacity")) - 0.01;
-  setTimeout(function() {fadeOut(el)}, 1);
- }
-}
+// function fadeOut(el){
+//  // console.log('fadeOut')
+//  if(parseFloat(window.getComputedStyle(el).getPropertyValue("opacity")) > 0.5){
+//   el.style.opacity = parseFloat(window.getComputedStyle(el).getPropertyValue("opacity")) - 0.01;
+//   setTimeout(function() {fadeOut(el)}, 1);
+//  }
+// }
 
 // hope_img.addEventListener("click", changeImage(hope_img, hope_array));
 
 function handleHopeClick() {
- fadeIn(hope_img_layer);
+//  fadeIn(hope_img_layer);
+  changeImage(hope_img, hope_array);
  // setTimeout(changeImage(hope_img, hope_array), 2000);
 }
 
