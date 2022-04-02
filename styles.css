@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 /* font-family: 'Source Sans Pro', sans-serif; */
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 
 @font-face { /*  Adding Arial font for mobile devices */
   font-family: 'ArialBlack-';
@@ -95,15 +94,18 @@ html {
 }
 
 .title{
+  font-family: "Fira Sans", sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: 4em;
-  font-family:'ArialBlack-', sans-serif;
-  color: #ffd700;
-  text-shadow: 0.2rem 0.2rem black;
+  font-size: 12em;
+  font-weight: 600;
+  /* font-family:'ArialBlack-', sans-serif; */
+  color: #FFF8DC; 
+  /* text-shadow: ; */
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 10px 10px #DAA520;
   text-align: center;
   /* border: 1px solid red; */
   /* width: 50vw; */
@@ -124,8 +126,8 @@ html {
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   width: 7rem;
-  -webkit-filter: drop-shadow(2px 0px 0px rgb(255, 196, 0));
-    filter: drop-shadow(2px 0px 0px rgb(255, 208, 0));
+  -webkit-filter: drop-shadow(4px 0px 0px rgb(255, 196, 0));
+    filter: drop-shadow(4px 0px 0px rgb(255, 208, 0));
   /* -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%); */
 
@@ -141,17 +143,18 @@ html {
   display: flex;
   padding: 20px;
   flex-direction: column;
+  background-color: black;
   /* background-color: #0057b7; */
   /* border: 1px solid yellow; */
   /* background-image: linear-gradient(147deg, #0057b7 0%, #ffd700 74%); */
 }
 
 .subtitle{
-  font-family:'ArialBlack-', sans-serif;
-  color: #ffd700;
+  font-family: "Fira Sans", sans-serif;
+  color: #DAA520;
   /* margin-top: 30px; */
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
   text-decoration: underline;
   /* margin-top: 20px; */
   /* border: 1px solid blue; */
@@ -162,10 +165,11 @@ html {
   margin: auto;
   margin-top: 40px;
   text-align: center;
+  font-family: "Fira Sans", sans-serif;
   /* width: 70vw; */
   /* height: max-content; */
   font-size: 5vw;
-  color: whitesmoke;
+  color: #FFF8DC;
   /* border: 1px solid red; */
 }
 
@@ -175,7 +179,8 @@ html {
 
 .container_3{
   background-color: #FFE53B;
-  background-image: linear-gradient(147deg, #ffd700 0%, #fd3838 74%);
+  /* background-image: linear-gradient(147deg, #ffd700 0%, #fd3838 74%); */
+  background-image: linear-gradient(147deg, #FFF8DC  0%, #DAA520 74%);
   padding: 50px;
 }
 
@@ -219,10 +224,10 @@ html {
 .img_layer{
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  /* background-image: linear-gradient(147deg, #DAA520 0%, #DAA520 74%); */
   border-radius: 20px;
-  box-shadow: 4px 13px 30px 1px rgb(252, 56, 56);
-  opacity: 0.5;
+  /* box-shadow: 4px 13px 30px 1px black; */
+  opacity: 0.9;
 }
 
 .org_info{
@@ -265,7 +270,7 @@ html {
   /* margin: auto; */
   /* margin-top: 40px; */
   padding: 15px 35px;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  background-image: linear-gradient(147deg, #1E90FF 0%, #1E90FF 74%);
   border-radius: 50px;
   font-size: 30px;
   letter-spacing: 1px;
