@@ -33,7 +33,7 @@
 }
 
 body{
-  background: #0057b7;
+  background: black;
 }
 
 html {
@@ -94,6 +94,7 @@ html {
 }
 
 .title{
+  display: block;
   font-family: "Fira Sans", sans-serif;
   position: absolute;
   top: 50%;
@@ -107,7 +108,7 @@ html {
   /* text-shadow: ; */
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 10px 10px #DAA520;
   text-align: center;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   /* width: 50vw; */
 
   animation: fadeIn 2.5s ease-in;
@@ -291,6 +292,11 @@ html {
 }
 
 @media (max-width: 550px){
+  .title{
+    font-size: 4em;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 5px 5px #DAA520;
+  }
+
   .org_box{
     margin: auto;
     margin-top: 200px;
