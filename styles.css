@@ -299,7 +299,7 @@ html {
 
 @media (max-width: 550px){
   .title{
-    font-size: 4em;
+    font-size: 3.5em;
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 5px 5px #DAA520;
   }
 
