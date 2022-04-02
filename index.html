@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/peace_pigeon_img.jpg" type="image/icon type">
-  <title>інформація</title>
+  <title>Ukraine Help List</title>
 </head>
 
 <body>
@@ -20,16 +20,16 @@
     <option language='polish' value="polish">🇵🇱 POL</option>
   </select> -->
 
-		<!-- <div class="langWrap">
-			<a href="#" language='english' class="active">ENG</a>
-			<a href="#" language='ukranian'>УКР</a>
+  <!-- <div class="langWrap">
+   <a href="#" language='english' class="active">ENG</a>
+   <a href="#" language='ukranian'>УКР</a>
       <a href="#" language='russian'>РУС</a>
       <a href="#" language='polish'>POL</a>
-		</div> -->
+  </div> -->
 
-		<div class="content">
+  <div class="content">
       <div class="container_1">
-        <h1 class="title">Ukraine Humanitarian Help List</h1>
+        <h1 class="title">Ukraine Help List</h1>
         <!-- <img class="main_img" src="main_img.jpg" alt="Humanitarian supplies"> -->
         <div class="arrow_container"><a href="#container2"><img class="arrow" src="arrow.png" alt="arrow"></a></div>
       </div>
@@ -37,8 +37,10 @@
       <div class="container_2" id="container2">
         <div class="subtitle">What's going on?</div>
         <div class="description" id="description"> 
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis, dicta nesciunt repellat eius labore ea accusantium? Ex nemo vel dolorem cum neque. Corrupti laudantium repellendus maxime reiciendis, voluptate modi optio sed qui eaque rerum fugiat accusantium, quis sequi eum.</p> 
-          <p> Quisquam reiciendis voluptatibus, provident ex error debitis dolorem pariatur explicabo quae deserunt aut non sequi facere! Velit sunt incidunt accusantium saepe hic debitis totam, laudantium ab culpa optio dolores nam quo fugiat neque nostrum enim officia quam labore obcaecati?</p> 
+          <span class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis, dicta nesciunt repellat eius labore ea accusantium? Ex nemo vel dolorem cum neque. Corrupti laudantium repellendus maxime reiciendis, voluptate modi optio sed qui eaque rerum fugiat accusantium, quis sequi eum. <br><br> Quisquam reiciendis voluptatibus, provident ex error debitis dolorem pariatur explicabo quae deserunt aut non sequi facere! Velit sunt incidunt accusantium saepe hic debitis totam, laudantium ab culpa optio dolores nam quo fugiat neque nostrum enim officia quam labore obcaecati?
+          </span>
+          
         </div>
       </div> 
 
@@ -52,12 +54,53 @@
               </div> -->
 
               <!-- <div class="org_img_container"> -->
-                <div class="org_img"></div>
+                <div class="org_img" id="hope_img" onClick="handleHopeClick()">
+                  <div class="img_layer"></div>
+                </div>
               <!-- </div> -->
   
               <div class="org_info">
                 <div class="org_title"> Hope </div>
-                <div class="org_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis, dicta nesciunt repellat eius labore ea accusantium? Ex nemo vel dolorem cum neque. C </div>
+                <div class="org_description"> <span class="org_description_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis, dicta nesciunt repellat eius labore ea accusantium? Ex nemo vel dolorem cum neque. C </span> </div>
+                <div class="org_donate"> Donate </div>
+              </div>
+            <!-- </div>   -->
+          </div>
+
+          <div class="org_box">
+            <!-- <div class="wrap"> -->
+              <!-- <div class="org_img_container">
+                <div class="org_img"></div>
+              </div> -->
+
+              <!-- <div class="org_img_container"> -->
+                <div class="org_img">
+                  <div class="img_layer"></div>
+                </div>
+              <!-- </div> -->
+  
+              <div class="org_info">
+                <div class="org_title"> Hope </div>
+                <div class="org_description"> <span class="org_description_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis, dicta nesciunt repellat eius labore ea accusantium? Ex nemo vel dolorem cum neque. C </span> </div>
+                <div class="org_donate"> Donate </div>
+              </div>
+            <!-- </div>   -->
+          </div>
+          <div class="org_box">
+            <!-- <div class="wrap"> -->
+              <!-- <div class="org_img_container">
+                <div class="org_img"></div>
+              </div> -->
+
+              <!-- <div class="org_img_container"> -->
+                <div class="org_img">
+                  <div class="img_layer"></div>
+                </div>
+              <!-- </div> -->
+  
+              <div class="org_info">
+                <div class="org_title"> Hope </div>
+                <div class="org_description"> <span class="org_description_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis, dicta nesciunt repellat eius labore ea accusantium? Ex nemo vel dolorem cum neque. C </span> </div>
                 <div class="org_donate"> Donate </div>
               </div>
             <!-- </div>   -->
@@ -66,11 +109,13 @@
  
       </div>
 
-      <div class="footer"></div>
-			
-			
-		</div>
-	<!-- </div> -->
+      <div class="footer">
+        <div class="contact">contact us: nikitasmelk@gmail.com</div>
+      </div>
+   
+   
+  </div>
+ <!-- </div> -->
 
   <!-- language change -->
   <script src="script.js"></script>

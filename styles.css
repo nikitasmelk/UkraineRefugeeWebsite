@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 /* font-family: 'Source Sans Pro', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 
 @font-face { /*  Adding Arial font for mobile devices */
   font-family: 'ArialBlack-';
@@ -137,8 +138,12 @@ html {
 
 .container_2{
   height: 100vh;
-  background-color: #0057b7;
-  border: 1px solid yellow;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  /* background-color: #0057b7; */
+  /* border: 1px solid yellow; */
+  /* background-image: linear-gradient(147deg, #0057b7 0%, #ffd700 74%); */
 }
 
 .subtitle{
@@ -148,18 +153,20 @@ html {
   text-align: center;
   font-size: 2em;
   text-decoration: underline;
-  margin-top: 20px;
-  border: 1px solid blue;
+  /* margin-top: 20px; */
+  /* border: 1px solid blue; */
 }
 
 .description{
+  flex: 1 1 auto;
   margin: auto;
-  /* margin-top: 40px; */
+  margin-top: 40px;
   text-align: center;
-  width: 70vw;
-  font-size: 3vw;
+  /* width: 70vw; */
+  /* height: max-content; */
+  font-size: 5vw;
   color: whitesmoke;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .description p {
@@ -168,17 +175,22 @@ html {
 
 .container_3{
   background-color: #FFE53B;
-  background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
-  padding: 20px;
+  background-image: linear-gradient(147deg, #ffd700 0%, #fd3838 74%);
+  padding: 50px;
 }
 
 .org_box{
   margin: auto;
   margin-top: 200px;
-  height: 60vh;
-  width: 80vw;
+  /* height: 60vh; */
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  height: 30vw;
   border-radius: 25px;
   background-color: white;
+  font-family: "Fira Sans", sans-serif;
+  padding: 40px;
   /* background: linear-gradient(90deg, #0ba5ff,#6ebae6);
   border-color: linear-gradient(90deg, #0ba5ff,#6ebae6); */
   /* margin-top: 40px; */
@@ -191,82 +203,167 @@ html {
   height: 75%;
   border: 1px solid salmon;
 } */
-
 .org_img{
   position: relative;
-  top: -30vw;
-  left: 10vw;
-  width: 60vw;
-  height: 80vw;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  /* top: -30vw; */
+  left: -10vw;
+  width: 30vw;
+  height: 30vw;
+  /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
+  background-image: url(hope_img_1.jpeg);
+  background-position-x: -15px;
+  background-size: cover;
   border-radius: 20px;
-  opacity: 0.8;
 }
 
-/* .org_img{
-  position: relative;
-
+.img_layer{
+  width: 100%;
   height: 100%;
-  width: 18vw;
   background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
   border-radius: 20px;
-  opacity: 0.8;
-} */
-
-/* .org_img_container{
-	position: relative;
-  left: -25%;
-	width: 17vw;		
+  box-shadow: 4px 13px 30px 1px rgb(252, 56, 56);
+  opacity: 0.5;
 }
-.org_img_container:before{
-	content: "";
-	display: inline-block;
-	padding-top: 100%; 	
-}
-
-.org_img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: red;
-} */
 
 .org_info{
-  text-align: center;
-  position: relative;
-  top: -30vw;
-  border-radius:1px solid lime;
-  height: 1px;
-  width: 80%;
+  text-align: left;
+  /* position: relative; */
+   display: flex;
+  flex-direction: column;
+  /* justify-content: space-between;  */
+  /* border: 1px solid lime; */
+  /* top: -30vw; */
+  /* width: 80%; */
+  height: 80%;
+  width: 50%;
+  /* border: 1px solid blue; */
   margin: auto;
+  margin-left: -5vw;
 }
 
 .org_title{
-  font-size: 30px;
-  margin-top: 20px;
-  border-radius:1px solid yellow;
+  font-size: 40px;
+  /* margin-top: 20px; */
+  font-weight: 700;
+  /* border: 1px solid orange; */
 }
 
 .org_description{
-  margin-top: 20px;
-  border-radius:1px solid orange;
+  margin: auto;
+  /* margin-top: 40px; */
+  line-height: 1.5em;
+  max-height: 50%;
+  font-size: 20px;
+  color: #4e4a67;
+  /* border: 1px solid salmon; */
+  /* width: 80%; */
+}
+
+.org_donate{
+  display: inline-flex;
+  width: max-content;
+  /* margin: auto; */
+  /* margin-top: 40px; */
+  padding: 15px 35px;
+  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  border-radius: 50px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 500;
 }
 
 .footer{
   background-color: black;
-  height: 20vh;
+  padding: 50px;
+  /* height: 10vh; */
 }
 
-.org_donate{
-  margin-top: 20px;
-  padding: 10px;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-  border-radius: 20px;
+.contact{
+  color:white;
+  float: right;
+  font-family: "Fira Sans", sans-serif;
 }
 
+@media (max-width: 550px){
+  .org_box{
+    margin: auto;
+    margin-top: 200px;
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    height: auto;
+    border-radius: 25px;
+    background-color: white;
+    font-family: "Fira Sans", sans-serif;
+    padding-bottom: 20px;
+    /* background: linear-gradient(90deg, #0ba5ff,#6ebae6);
+    border-color: linear-gradient(90deg, #0ba5ff,#6ebae6); */
+    /* margin-top: 40px; */
+  }
+  
+  .org_img{
+    position: relative;
+    top: -30vw;
+    left: 10vw;
+    width: 60vw;
+    height: 70vw;
+    /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
+    background-image: url(hope_img_1.jpeg);
+    background-position-x: -15px;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  .org_info{
+    text-align: center;
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    border: 1px solid lime;
+    /* top: -30vw; */
+    width: 80%;
+    margin: auto;
+    margin-top: -30vw;
+  }
+  
+  .org_title{
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  
+  .org_description{
+    margin:0;
+    margin-top: 20px;
+    line-height: 1;
+    /* min-height: 50%; */
+    max-height: 100%;
+    min-height: 90%;
+    height: 90%;
+    /* height: auto; */
 
+    /* font-size: 10px; */
+    color: #4e4a67;
+    border:1px solid pink;
+
+  }
+  
+  .org_donate{
+    display: inline-flex;
+    width: max-content;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px 35px;
+    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+    border-radius: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
 
 /* optimize for mobile */
 /* @media (max-width: 1200px) {
