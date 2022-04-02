@@ -106,7 +106,7 @@ html {
   /* font-family:'ArialBlack-', sans-serif; */
   color: #FFF8DC; 
   /* text-shadow: ; */
-  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 10px 10px #DAA520;
+  text-shadow: 2px 0 0 #DAA520, 0 -2px 0 #DAA520, 0 2px 0 #DAA520, -2px 0 0 #DAA520, 10px 10px #DAA520;
   text-align: center;
   /* border: 1px solid red; */
   /* width: 50vw; */
@@ -150,7 +150,7 @@ html {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  background-color: black;
+  background-color: rgb(61, 61, 61);
   /* background-color: #0057b7; */
   /* border: 1px solid yellow; */
   /* background-image: linear-gradient(147deg, #0057b7 0%, #ffd700 74%); */
@@ -173,7 +173,7 @@ html {
   margin-top: 40px;
   text-align: center;
   font-family: "Fira Sans", sans-serif;
-  /* width: 70vw; */
+  width: 70vw;
   /* height: max-content; */
   font-size: 5vw;
   color: #FFF8DC;
@@ -300,7 +300,7 @@ html {
 @media (max-width: 550px){
   .title{
     font-size: 3.5em;
-    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 5px 5px #DAA520;
+    text-shadow: 2px 0 0 #DAA520, 0 -2px 0 #DAA520, 0 2px 0 #DAA520, -2px 0 0 #DAA520, 5px 5px #DAA520;
   }
 
   .org_box{
@@ -361,6 +361,7 @@ html {
     max-height: 100%;
     min-height: 90%;
     height: 90%;
+    font-size: 3vh;
     /* height: auto; */
 
     /* font-size: 10px; */

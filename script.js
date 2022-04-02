@@ -8,6 +8,7 @@ const hope_array = ["hope_img_1.jpg", "hope_img_2.jpg", "hope_img_3.jpg"];
 const hope_img = document.getElementById('hope_img');
 const hope_img_layer = document.querySelector('#hope_img .img_layer');
 
+
 hope_img.style.backgroundImage  = `url("hope_img_1.jpg")`;
 console.log(window.getComputedStyle(hope_img_layer).getPropertyValue("opacity"));
 
