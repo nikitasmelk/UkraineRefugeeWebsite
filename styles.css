@@ -303,6 +303,11 @@ html {
 }
 
 @media (max-width: 550px){
+  .container_3{
+    padding: 50px 0px;
+    /* padding-top: 50px; */
+  }
+
   .title{
     font-size: 6vh;
     text-shadow: 2px 0 0 #DAA520, 0 -2px 0 #DAA520, 0 2px 0 #DAA520, -2px 0 0 #DAA520, 5px 5px #DAA520;
