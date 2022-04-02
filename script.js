@@ -31,10 +31,10 @@ const resizeText = ({ element, parent }) => {
   element.style.fontSize = `${i - 1}px`
 }
 
-resizeText({
-  element: document.querySelector('.text'),
-  parent: document.querySelector('.description')
-})
+// resizeText({
+//   element: document.querySelector('.text'),
+//   parent: document.querySelector('.description')
+// })
 
 // let org_description_texts = document.querySelectorAll('.org_description_text');
 // let org_description_boxes = document.querySelectorAll('.org_description');
