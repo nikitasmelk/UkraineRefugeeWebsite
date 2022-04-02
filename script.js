@@ -4,7 +4,7 @@ const langSelector = document.getElementById('langSelector');
 const titleEl = document.querySelector('.title');
 const descrEl = document.querySelector('.description');
 
-const hope_array = ["hope_img_1.jpeg", "hope_img_2.jpeg", "hope_img_3.jpeg"];
+const hope_array = ["hope_img_1.jpg", "hope_img_2.jpg", "hope_img_3.jpg"];
 const hope_img = document.getElementById('hope_img');
 const hope_img_layer = document.querySelector('#hope_img .img_layer');
 console.log(window.getComputedStyle(hope_img_layer).getPropertyValue("opacity"));
