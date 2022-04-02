@@ -193,7 +193,8 @@ html {
 
 .org_box{
   margin: auto;
-  margin-top: 200px;
+  /* margin-top: 200px; */
+  margin-bottom: 200px;
   /* height: 60vh; */
   display: flex;
   flex-direction: row;
@@ -206,6 +207,10 @@ html {
   /* background: linear-gradient(90deg, #0ba5ff,#6ebae6);
   border-color: linear-gradient(90deg, #0ba5ff,#6ebae6); */
   /* margin-top: 40px; */
+}
+
+.org_box:first-child{
+  margin-top: 200px;
 }
 
 /* .org_box .wrap{
@@ -318,7 +323,7 @@ html {
 
   .org_box{
     margin: auto;
-    margin-top: 200px;
+    margin-bottom: 200px;
     /* height: 60vh; */
     display: flex;
     flex-direction: column;
@@ -333,6 +338,14 @@ html {
     /* background: linear-gradient(90deg, #0ba5ff,#6ebae6);
     border-color: linear-gradient(90deg, #0ba5ff,#6ebae6); */
     /* margin-top: 40px; */
+  }
+
+  .org_box:first-child{
+    margin-top: 200px;
+  }
+
+  .org_box:last-child{
+    margin-bottom: 50px;
   }
   
   .org_img{
@@ -394,6 +407,24 @@ html {
     letter-spacing: 1px;
     color: #fff;
     font-weight: 500;
+  }
+
+  .footer{
+    background-color: black;
+    padding: 20px;
+    /* height: 20px; */
+    /* height: 10vh; */
+  }
+  
+  .contact{
+    text-align: center;
+    display: block;
+    float: none;
+    color:white;
+    /* float: right; */
+    /* width: 100vw; */
+    /* border: 1px solid red; */
+    font-family: "Fira Sans", sans-serif;
   }
 }
 
