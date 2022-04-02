@@ -9,7 +9,7 @@
 
 @keyframes fadeIn {
   from {
-    opacity: 0%;
+    opacity: 10%;
   }
 
   to {
@@ -108,10 +108,16 @@ html {
   /* text-shadow: ; */
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 10px 10px #DAA520;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* width: 50vw; */
 
   animation: fadeIn 2.5s ease-in;
+}
+
+.title::selection{
+  background-color: #FFF8DC;
+  color: #DAA520;
+  text-shadow: 4px 4px 0 black;
 }
 
 .arrow_container{
