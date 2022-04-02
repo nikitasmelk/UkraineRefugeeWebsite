@@ -298,7 +298,7 @@ html {
     border-radius: 25px;
     background-color: white;
     font-family: "Fira Sans", sans-serif;
-    padding-bottom: 20px;
+    padding: 0px;
     /* background: linear-gradient(90deg, #0ba5ff,#6ebae6);
     border-color: linear-gradient(90deg, #0ba5ff,#6ebae6); */
     /* margin-top: 40px; */
