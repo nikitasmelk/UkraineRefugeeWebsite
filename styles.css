@@ -106,7 +106,7 @@ html {
   /* font-family:'ArialBlack-', sans-serif; */
   color: #FFF8DC; 
   /* text-shadow: ; */
-  text-shadow: 2px 0 0 #DAA520, 0 -2px 0 #DAA520, 0 2px 0 #DAA520, -2px 0 0 #DAA520, 10px 10px #DAA520;
+  text-shadow: 2px 0 0 #DAA520, 0 -2px 0 #DAA520, 0 2px 0 #DAA520, -2px 0 0 #DAA520, 0.5vw 0.5vw #DAA520;
   text-align: center;
   /* border: 1px solid red; */
   /* width: 50vw; */
@@ -128,11 +128,11 @@ html {
 
 .arrow{
   position: absolute;
-  bottom: 0;
+  bottom: 3%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  width: 13rem;
+  width: 7vw;
   -webkit-filter: drop-shadow(1px 5px 5px #DAA520);
     filter: drop-shadow(1px 5px 5px #b68816);
   /* -webkit-transform: translate(0, -50%);
@@ -147,7 +147,7 @@ html {
 
 .container_2{
   height: 100vh;
-  display: flex;
+  /* display: flex; */
   padding: 20px;
   flex-direction: column;
   background-color: rgb(61, 61, 61);
@@ -161,21 +161,24 @@ html {
   color: #DAA520;
   /* margin-top: 30px; */
   text-align: center;
+  height: 8vh;
   font-size: 4em;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   /* margin-top: 20px; */
   /* border: 1px solid blue; */
 }
 
 .description{
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   margin: auto;
-  margin-top: 40px;
+  margin-top: 2vh;
   text-align: center;
   font-family: "Fira Sans", sans-serif;
   width: 70vw;
+  height: 86vh;
   /* height: max-content; */
-  font-size: 2.5vw;
+  /* font-size: 2.5vw; */
+  line-height: 1.3;
   color: #FFF8DC;
   /* border: 1px solid red; */
 }
@@ -184,48 +187,51 @@ html {
   margin-top: 40px;
 }
 
+.description .bold{
+  font-weight: 800;
+}
+
 .container_3{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
   background-color: #FFE53B;
   /* background-image: linear-gradient(147deg, #ffd700 0%, #fd3838 74%); */
   background-image: linear-gradient(147deg, #FFF8DC  0%, #DAA520 74%);
   padding: 50px;
 }
 
+/* .org_container{
+  border: 1px solid red;
+  width: 40vw;
+  height: auto;
+} */
+
 .org_box{
   margin: auto;
   /* margin-top: 200px; */
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   /* height: 60vh; */
   display: flex;
   flex-direction: row;
-  width: 60vw;
-  height: 30vw;
+  width: 30vw;
+  height: 15vw;
   border-radius: 25px;
   background-color: white;
   font-family: "Fira Sans", sans-serif;
-  padding: 40px;
-  /* background: linear-gradient(90deg, #0ba5ff,#6ebae6);
-  border-color: linear-gradient(90deg, #0ba5ff,#6ebae6); */
-  /* margin-top: 40px; */
+  padding: 20px;
 }
 
 .org_box:first-child{
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
-/* .org_box .wrap{
-  position: relative;
-  top: 12.5%;
-  width: 100%;
-  height: 75%;
-  border: 1px solid salmon;
-} */
 .org_img{
   position: relative;
   /* top: -30vw; */
-  left: -10vw;
-  width: 30vw;
-  height: 30vw;
+  left: -5vw;
+  width: 15vw;
+  height: 15vw;
   /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
   background-image: url(hope_img_1.jpg);
   background-position-x: -15px;
@@ -251,26 +257,29 @@ html {
   /* border: 1px solid lime; */
   /* top: -30vw; */
   /* width: 80%; */
-  height: 80%;
-  width: 50%;
+  height: 100%;
+  width: 60%;
   /* border: 1px solid blue; */
   margin: auto;
-  margin-left: -5vw;
+  margin-left: -3.5vw;
 }
 
 .org_title{
-  font-size: 70px;
-  /* margin-top: 20px; */
+  font-size: 2vw;
+  /* margin-top: -40px; */
   font-weight: 700;
   /* border: 1px solid orange; */
 }
 
 .org_description{
   margin: auto;
-  /* margin-top: 40px; */
-  line-height: 1.5em;
-  max-height: 50%;
-  font-size: 30px;
+  height: 60%;
+  min-height: 60%;
+  max-height: 60%;
+  margin-top: 5%;
+  /* line-height: 1.5em; */
+  /* max-height: 50%; */
+  font-size: 1.5vw;
   color: #4e4a67;
   /* border: 1px solid salmon; */
   /* width: 80%; */
@@ -281,10 +290,10 @@ html {
   width: max-content;
   /* margin: auto; */
   /* margin-top: 40px; */
-  padding: 15px 35px;
+  padding: 7.5px 17.5px;
   background-image: linear-gradient(147deg, #77bbff 0%, #0079f1 74%);
   border-radius: 50px;
-  font-size: 50px;
+  font-size: 1.5vw;
   letter-spacing: 1px;
   color: #fff;
   font-weight: 500;
@@ -296,7 +305,7 @@ html {
 
 .footer{
   background-color: black;
-  padding: 50px;
+  padding: 30px;
   /* height: 10vh; */
 }
 
@@ -308,23 +317,38 @@ html {
 
 @media (max-width: 550px){
   .arrow{
-    width: 7rem;
+    width: 15vw;
   }
 
   .container_3{
+    display: block;
+    flex-wrap: wrap;
     padding: 50px 0px;
     /* padding-top: 50px; */
   }
 
   .title{
-    font-size: 6vh;
-    text-shadow: 2px 0 0 #DAA520, 0 -2px 0 #DAA520, 0 2px 0 #DAA520, -2px 0 0 #DAA520, 5px 5px #DAA520;
+    font-size: 4vh;
+    text-shadow: 2px 0 0 #DAA520, 0 -2px 0 #DAA520, 0 2px 0 #DAA520, -2px 0 0 #DAA520, 0.3vh 0.3vh #DAA520;
+  }
+
+  .subtitle{
+    font-family: "Fira Sans", sans-serif;
+    color: #DAA520;
+    /* margin-top: 30px; */
+    text-align: center;
+    height: 8vh;
+    font-size: 5vh;
+    text-decoration: underline;
+    /* margin-top: 20px; */
+    /* border: 1px solid blue; */
   }
 
   .description{
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     margin: auto;
-    margin-top: 40px;
+    margin-top: 2vh;
+    height: 86vh;
     text-align: center;
     font-family: "Fira Sans", sans-serif;
     width: 70vw;
@@ -395,11 +419,12 @@ html {
   .org_description{
     margin:0;
     margin-top: 20px;
-    line-height: 1;
     /* min-height: 50%; */
-    max-height: 100%;
-    min-height: 90%;
-    height: 90%;
+    max-height: 150%;
+    min-height: 150%;
+    height: 150%;
+    font-size: 2.5vh;
+    /* line-height: 2; */
     /* height: auto; */
 
     /* font-size: 10px; */
@@ -420,6 +445,7 @@ html {
     letter-spacing: 1px;
     color: #fff;
     font-weight: 500;
+    font-size: 2.5vh;
   }
 
   .footer{
@@ -440,46 +466,3 @@ html {
     font-family: "Fira Sans", sans-serif;
   }
 }
-
-/* optimize for mobile */
-/* @media (max-width: 1200px) {
-  .arrow{
-    width: 5rem;
-    -webkit-filter: drop-shadow(2px 0px 0px rgb(255, 196, 0));
-    filter: drop-shadow(2px 0px 0px rgb(255, 208, 0));
-  } 
-
-  .description{
-    width: 80vw;
-    margin-top: 30px;
-    font-size: 4vw;
-  }
-} */
-
-/* optimize for smaller mobile */
-/* @media (max-width: 800px) { 
-  .title{
-    width: 100vw;
-    font-size: 3rem;
-  }
-
-  .description{
-    width: 80vw;
-    margin-top: 30px;
-    font-size: 5vw;
-  }
-} */
-
-/* optimize for nokia mobile */
-/* @media (max-width: 450px) { 
-  .title{
-    width: 80vw;
-    font-size: 1em;
-  }
-
-  .description{
-    width: 80vw;
-    margin-top: 30px;
-    font-size: 7vw;
-  }
-} */

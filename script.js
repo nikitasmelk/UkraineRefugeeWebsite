@@ -14,9 +14,24 @@ console.log(window.getComputedStyle(hope_img_layer).getPropertyValue("opacity"))
 
 console.log(hope_img_layer)
 
+function ready(){
+  for (let i = 0; i < document.querySelectorAll('.org_description_text').length; i++) {
+    resizeText({
+     element: document.querySelectorAll('.org_description_text')[i],
+     parent: document.querySelectorAll('.org_description')[i]
+    })
+   }
+
+   resizeText({
+    element: document.querySelector('.text'),
+    parent: document.querySelector('.description')
+  })
+}
+
 const isOverflown = ({ clientHeight, scrollHeight }) => scrollHeight > clientHeight
 
 const resizeText = ({ element, parent }) => {
+  console.log('resizing');
   let i = 12 // let's start with 12px
   let overflow = false
   const maxSize = 48 // very huge text size
@@ -28,23 +43,11 @@ const resizeText = ({ element, parent }) => {
   }
 
   // revert to last state where no overflow happened:
-  element.style.fontSize = `${i - 1}px`
+  element.style.fontSize = `${i - 2}px`
 }
-
-// resizeText({
-//   element: document.querySelector('.text'),
-//   parent: document.querySelector('.description')
-// })
 
 // let org_description_texts = document.querySelectorAll('.org_description_text');
 // let org_description_boxes = document.querySelectorAll('.org_description');
-
-for (let i = 0; i < document.querySelectorAll('.org_description_text').length; i++) {
- resizeText({
-  element: document.querySelectorAll('.org_description_text')[i],
-  parent: document.querySelectorAll('.org_description')[i]
- })
-}
 
 const changeImage = (image, array) => {
 
@@ -151,3 +154,5 @@ function handleHopeClick() {
 //     "Сәбіз Lorem ipsum, жеңілдік. Бұл ауырсыну үшін осы らの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまasperioresリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
 //   }
 //  }
+
+document.addEventListener("DOMContentLoaded", ready);
