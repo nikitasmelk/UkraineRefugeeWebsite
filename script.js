@@ -9,7 +9,7 @@ const hope_img = document.getElementById('hope_img');
 const hope_img_layer = document.querySelector('#hope_img .img_layer');
 
 
-hope_img.style.backgroundImage  = `url("hope_img_1.jpg")`;
+hope_img.style.backgroundImage  = `url("images/hope_img_1.jpg")`;
 console.log(window.getComputedStyle(hope_img_layer).getPropertyValue("opacity"));
 
 console.log(hope_img_layer)
@@ -56,12 +56,12 @@ const changeImage = (image, array) => {
 //  console.log(window.getComputedStyle(image).getPropertyValue("backgroundImage"));
 //  console.log(`url(${array[0]})`)
 
- if(image.style.backgroundImage == `url("${array[0]}")`) {
-  image.style.backgroundImage = `url("${array[1]}")`
- } else if (image.style.backgroundImage == `url("${array[1]}")`) {
-  image.style.backgroundImage = `url("${array[2]}")`
+ if(image.style.backgroundImage == `url("images/${array[0]}")`) {
+  image.style.backgroundImage = `url("images/${array[1]}")`
+ } else if (image.style.backgroundImage == `url("images/${array[1]}")`) {
+  image.style.backgroundImage = `url("images/${array[2]}")`
  } else {
-  image.style.backgroundImage = `url("${array[0]}")`
+  image.style.backgroundImage = `url("images/${array[0]}")`
  }
 
 }
