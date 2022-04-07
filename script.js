@@ -5,14 +5,28 @@ const titleEl = document.querySelector('.title');
 const descrEl = document.querySelector('.description');
 
 const hope_array = ["hope_img_1.jpg", "hope_img_2.jpg", "hope_img_3.jpg"];
+const malteser_array = ["malteser_img_1.jpg", "malteser_img_2.jpg", "malteser_img_3.jpg"];
+
 const hope_img = document.getElementById('hope_img');
-const hope_img_layer = document.querySelector('#hope_img .img_layer');
+const malteser_img = document.getElementById("malteser_img");
+const nbu_img = document.getElementById("nbu_img");
+const remember_us_img = document.getElementById("remember_us_img");
+const siepomaga_img = document.getElementById("siepomaga_img");
+const voc_img = document.getElementById("voc_img");
+const doctors_img = document.getElementById("doctors_img");
+const pin_img = document.getElementById("pin_img");
+const caritas_img = document.getElementById("caritas_img");
+const hai_img = document.getElementById("hai_img");
+const project_hope_img = document.getElementById("project_hope_img");
+const unwfp_img = document.getElementById("unwfp_img");
+// const hope_img_layer = document.querySelector('#hope_img .img_layer');
 
 
 hope_img.style.backgroundImage  = `url("images/hope_img_1.jpg")`;
-console.log(window.getComputedStyle(hope_img_layer).getPropertyValue("opacity"));
+malteser_img.style.backgroundImage = `url("images/malteser_img_1.jpg")`;
+// console.log(window.getComputedStyle(hope_img_layer).getPropertyValue("opacity"));
 
-console.log(hope_img_layer)
+// console.log(hope_img_layer)
 
 function ready(){
   for (let i = 0; i < document.querySelectorAll('.org_description_text').length; i++) {
@@ -26,6 +40,10 @@ function ready(){
     element: document.querySelector('.text'),
     parent: document.querySelector('.description')
   })
+}
+
+function DOMLoad(){
+  setTimeout(ready, 50);
 }
 
 const isOverflown = ({ clientHeight, scrollHeight }) => scrollHeight > clientHeight
@@ -114,6 +132,12 @@ function handleHopeClick() {
  // setTimeout(changeImage(hope_img, hope_array), 2000);
 }
 
+function handleMalteserClick() {
+  changeImage(malteser_img, malteser_array);
+}
+
+
+
 // for (let i = 0; i < org_description_boxes.length; i++) {
 //  console.log(org_description_texts[i])
 //  console.log(org_description_boxes[i])
@@ -155,4 +179,4 @@ function handleHopeClick() {
 //   }
 //  }
 
-document.addEventListener("DOMContentLoaded", ready);
+document.addEventListener("DOMContentLoaded", DOMLoad);
