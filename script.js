@@ -50,7 +50,12 @@ const isOverflown = ({ clientHeight, scrollHeight }) => scrollHeight > clientHei
 
 const resizeText = ({ element, parent }) => {
   // console.log('resizing');
-  let i = 12 // let's start with 12px
+  let i = 12;
+  console.log(window.innerWidth);
+  if(window.innerWidth < 600){
+    i = 19 // let's start with 12px
+  }
+
   let overflow = false
   const maxSize = 48 // very huge text size
 
@@ -62,7 +67,7 @@ const resizeText = ({ element, parent }) => {
 
   // revert to last state where no overflow happened:
   element.style.fontSize = `${i - 2}px`
-  console.log(window.getComputedStyle(element).getPropertyValue("fontSize"));
+  // console.log(window.getComputedStyle(element).getPropertyValue("font-size"));
 }
 
 // let org_description_texts = document.querySelectorAll('.org_description_text');
