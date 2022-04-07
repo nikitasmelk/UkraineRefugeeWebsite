@@ -349,7 +349,7 @@ a:link, a:visited {
     text-align: center;
     height: 8vh;
     font-size: 5vh;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* margin-top: 20px; */
     /* border: 1px solid blue; */
   }
