@@ -42,7 +42,7 @@ function ready(){
   })
 
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://api.countapi.xyz/hit/helpukrainelist.com/visits");
+  xhr.open("GET", "https://api.countapi.xyz/hit/helpukrainelist.com/PageVisits");
   xhr.responseType = "json";
   xhr.onload = function() {
       // console.log(this.response.value);
