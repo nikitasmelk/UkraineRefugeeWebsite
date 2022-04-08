@@ -40,6 +40,14 @@ function ready(){
     element: document.querySelector('.text'),
     parent: document.querySelector('.description')
   })
+
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://api.countapi.xyz/hit/helpukrainelist.com/visits");
+  xhr.responseType = "json";
+  xhr.onload = function() {
+      // console.log(this.response.value);
+  }
+  xhr.send();
 }
 
 function DOMLoad(){
