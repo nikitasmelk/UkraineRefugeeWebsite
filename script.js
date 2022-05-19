@@ -13,6 +13,7 @@ const caritas_img = document.getElementById("caritas_img");
 const hai_img = document.getElementById("hai_img");
 const project_hope_img = document.getElementById("project_hope_img");
 const unwfp_img = document.getElementById("unwfp_img");
+const cow_img = document.getElementById("cow_img");
 
 
 hope_img.style.backgroundImage  = `url("images/hope_img_1.jpg")`;
@@ -26,6 +27,7 @@ caritas_img.style.backgroundImage = `url("images/caritas.jpeg")`;
 hai_img.style.backgroundImage = `url("images/hai.jpg")`;
 project_hope_img.style.backgroundImage = `url("images/project_hope.jpg")`;
 unwfp_img.style.backgroundImage = `url("images/unwfp.jpg")`;
+cow_img.style.backgroundImage = `url("images/cow.jpg")`;
 
 
 function ready(){
